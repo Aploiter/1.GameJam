@@ -12,8 +12,8 @@ public class PlayerCtrl : MonoBehaviour
 
     void FixedUpdate()
     {
-        float speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-        float speedY = Input.GetAxisRaw("Vertical") * movSpeed;
+        float speedX = Input.GetAxis("Horizontal") * movSpeed;
+        float speedY = Input.GetAxis("Vertical") * movSpeed;
         rb.linearVelocity = new Vector2(speedX, speedY);
     }
 }
